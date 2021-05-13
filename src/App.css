@@ -1,38 +1,106 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .App {
-  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: #e5bdf6;
+}
+.logo {
+  width: 50%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: slategrey;
+  padding: 1rem;
+  flex-wrap: wrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-bar {
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  padding: 15px;
+  font-size: 20px;
+}
+.bar-btn {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-button {
+  padding: 17px;
+  border: 2px solid #fc8966;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.recipies {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.recipe {
+  background: black;
+  color: white;
+  border-radius: 5px;
+  width: 30%;
+  margin: 3%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  padding: 2%;
+}
+.recipe img {
+  height: 50%;
+  width: 50%;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.custype {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+}
+.cal {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 3%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.ing {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 3%;
+}
+@media screen and (max-width: 920px) {
+  .recipe {
+    width: 60%;
+    padding: 5%;
   }
-  to {
-    transform: rotate(360deg);
+  .logo h1 {
+    font-size: 20px;
+  }
+  .search-bar {
+    width: 50%;
+    height: 5%;
+    font-size: 15px;
+  }
+  .search-button {
+    padding: 10px;
   }
 }
