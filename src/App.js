@@ -7,7 +7,6 @@ function App() {
   const [recipies, setRecipies] = useState([]);
   const [search, setSearch] = useState('');
   const [query, setQuery] = useState('banana');
-  const banana = "banana"
 
 
   useEffect(() => {
